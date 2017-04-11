@@ -257,10 +257,13 @@ def compressLZMA(fileName):
     _("Saving as sprite...")
     
     result = subprocess.call(["lzma.exe", "e", "temp_tex.sc", "temp_.tex_sc"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+<<<<<<< HEAD
     try:
         result.check_returncode()
     except:
         _("ERROR. Check lzma.exe")
+=======
+>>>>>>> refs/remotes/Xset-s/master
     
     os.remove("temp_tex.sc")
     os.rename("temp_.tex_sc", "temp_tex.sc")
